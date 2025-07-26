@@ -8,7 +8,7 @@
       const search = window.location.search;
       const queryParams = new URLSearchParams(window.location.search);
       const token = queryParams.get("token");
-      const newUser = queryParams.get("newUser");
+      const newUser = queryParams.get("isNewUser");
       if (window.opener) {
         window.opener.postMessage(
           {
